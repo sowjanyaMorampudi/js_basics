@@ -78,10 +78,27 @@ function updateSalaries(employeesArray, percent) {
     return result;
 
 }
-const final_result = updateSalaries(employeesArray, percent);
-console.log(final_result);
-
+console.log(updateSalaries(employeesArray, percent));
 /* Test 1:  
     Input: employeesArray = [100,500,700,400], percent = 10 
     Output: [110, 550, 770, 440]
     */
+/*using map
+
+var result = employeesArray.map((item) => {
+    return item + item * percent / 100
+
+});
+
+console.log(result);*/
+/*
+//using foreach
+var newArray = []
+employeesArray.forEach((item) => {
+    result = item + item * percent / 100
+
+
+    newArray.push(result)
+})
+console.log(newArray);
+*/
