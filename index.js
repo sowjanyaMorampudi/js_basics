@@ -64,8 +64,8 @@ console.log(max);
 
 //javascript function to return updated salaries of employees by given percentage
 console.log("****problem4****");
-const employeesArray = [100, 500, 700, 400]
-const percent = 10
+//const employeesArray = [100, 500, 700, 400]
+//const percent = 10
 
 function updateSalaries(employeesArray, percent) {
 
@@ -78,21 +78,29 @@ function updateSalaries(employeesArray, percent) {
     return result;
 
 }
-console.log(updateSalaries(employeesArray, percent));
+console.log(updateSalaries([100, 200, 300, 400], 10));
 /* Test 1:  
     Input: employeesArray = [100,500,700,400], percent = 10 
     Output: [110, 550, 770, 440]
     */
 /*using map
+function updateSalaries(employeesArray, percent) {
+    let result = employeesArray.map((item) => {
+        return item + item * percent / 100
 
-var result = employeesArray.map((item) => {
-    return item + item * percent / 100
 
-});
+    });
+    return result;
+}
+console.log(updateSalaries([100, 200, 300, 400], 10));
+*/
 
-console.log(result);*/
+
+
+
 /*
 //using foreach
+function updateSalaries(employeesArray,percent){
 var newArray = []
 employeesArray.forEach((item) => {
     result = item + item * percent / 100
@@ -100,5 +108,7 @@ employeesArray.forEach((item) => {
 
     newArray.push(result)
 })
+return newArray;
+}
 console.log(newArray);
 */
